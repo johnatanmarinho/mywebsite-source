@@ -1,0 +1,38 @@
+
+main
+  display: flex
+  flex-flow: column wrap
+  justify-content: space-between
+  min-height: 100vh
+
+  header
+    min-height: 60px
+    background: $bg-color
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1)
+
+    &.floating
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 9999
+
+  .content
+    flex: 1 100%
+
+    section
+      min-height: 50vh
+      padding: 16px
+
+      h2
+        color: darken($bg-color, 20%)
+        text-shadow: 0 -1px 0 #888
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        text-transform: uppercase
+
+  footer
+    min-height: 60px
+    text-align: center
+    background: darken($bg-color, 70%)
+    span
+      color: darken($bg-color, 20%)

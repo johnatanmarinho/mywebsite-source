@@ -1,0 +1,21 @@
+.row
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: flex-start
+
+  & > *
+    flex: 1 100%
+
+  .col-small
+    flex: 50%
+
+  @media screen and (min-width: $mobile-width)
+    .col-full
+      flex: 100%
+
+    .col-big
+      flex: 50%
+
+    .col-small
+      flex: 25%

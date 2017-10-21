@@ -1,0 +1,46 @@
+.jumbotron
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1)
+  min-height: 60vh
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+  padding: 32px
+  align-items: center
+
+  h1
+    color: darken($bg-color, 10%)
+    text-shadow: 0 -1px 0 #888
+    text-transform: uppercase
+
+  @media screen and (min-width: $mobile-width)
+    align-items: stretch
+
+  .jumbotron-content
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    flex-grow: 1
+    margin-bottom: 32px
+    text-align: center
+    align-self: stretch
+
+    img
+      min-width: 50px
+      max-width: 200px
+      height: auto
+      border-radius: 50%
+      box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1)
+
+      @media screen and (min-width: $mobile-width)
+        max-width: 300px
+
+  .jumbotron-btn
+    background: $accent-color
+    padding: 16px
+    padding-left: 24px
+    padding-right: 24px
+    border-radius: 5px
+    color: white
+    text-transform: uppercase
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3)
+
+    @media screen and (min-width: $mobile-width)
+      align-self: flex-end
