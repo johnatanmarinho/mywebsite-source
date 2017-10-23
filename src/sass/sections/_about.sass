@@ -4,7 +4,9 @@ section#about
   .cardbox
     margin: auto
     padding: 16px
-    max-width: 50%
+
+    @media screen and (min-width: $mobile-width)
+      max-width: 50%
     .cardbox-content
       text-align: justify
       .carbox-btn
